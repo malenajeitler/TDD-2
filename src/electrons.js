@@ -1,17 +1,15 @@
 // Electrons.js
 function Electrons() {}
 Electrons.prototype.core = function(dice_values) {
-    var result = dice_values[dice_values.length - 1] ;
-    if(dice_values.length > 5) {
-        if(result === 3) {
-            result -= 1;
+    var electronSum = 0;
+    dice_values.forEach((element) => {
+        if (element === 3) {
+            electronSum += 2;
         }
-        else {
-            result += 10;
+        else if (element === 5) {
+            electronSum += 4;
         }
-    }
-    else {
-        result += 1;
-    }
-    return result;
+    })
+
+    return electronSum;
 };
