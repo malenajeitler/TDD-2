@@ -1,5 +1,5 @@
 // Electrons.js
 function Electrons() {}
-Electrons.prototype.add = function(dice_values) {
+Electrons.prototype.core = function(dice_values) {
 
 };
