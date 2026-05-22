@@ -22,5 +22,10 @@ describe('Electrons', function() {
     it('should return 12 for [ 3, 5, 3, 5, 4, 2 ]', function() {
 		expect(electronsInstance.core([ 3, 5, 3, 5, 4, 2 ])).toEqual(12);
 	});
+
+	//TC_5
+	it('should return 0 for [1, 4, 2]', function() {
+		expect(electronsInstance.core([ 1, 4, 2 ])).toEqual(0);
+	});
 	
 });
